@@ -1,0 +1,22 @@
+= episode-rename
+
+Generate new filenames for TV episode files
+
+== Usage
+
+Usage in general:
+
+```
+./rename.py {name} {season} {file} [{file}...]
+```
+
+An example:
+
+```
+$ ls title-0*
+title-04.mkv  title-05.mkv  title-06.mkv
+$ ./rename.py firefly 1 title-0*
+title-04.mkv firefly-101.mkv
+title-05.mkv firefly-102.mkv
+title-06.mkv firefly-103.mkv
+```
